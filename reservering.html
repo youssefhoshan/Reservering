@@ -16,6 +16,55 @@
                     <li><a href="loginpage.html">Login</a></li>
                 </ul>
             </div>
+
+            <img class="fietsimg" src="./images/fiets.jpg" alt="">
+            <br>
+
+            <form action="reservation.php" method="post">
+                <div class="elem-group">
+                  <label class="label-reservering" for="name">Jouw naam</label>
+                  <input class="input-reservering" type="text" id="name" name="visitor_name" placeholder="Jan Pieter" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                  <label class="label-reservering" for="email">Jouw E-mail</label>
+                  <input class="input-reservering" type="email" id="email" name="visitor_email" placeholder="Jan.Pieter@email.com" required>
+                </div>
+                <div class="elem-group">
+                  <label class="label-reservering" for="phone">Jouw Telefoonnummer</label>
+                  <input class="input-reservering" type="tel" id="phone" name="visitor_phone" placeholder="(+31) 12345678" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                
+                <div class="elem-group inlined">
+                  <label class="label-reservering" for="adult">Volwassenen</label>
+                  <input class="input-reservering" type="number" id="adult" name="total_adults" placeholder="0" min="1" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label class="label-reservering" for="child">Kinderen</label>
+                  <input class="input-reservering" type="number" id="child" name="total_children" placeholder="0" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label class="label-reservering" for="checkin-date">Check-in Datum</label>
+                  <input class="input-reservering" type="date" id="checkin-date" name="checkin" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label class="label-reservering" for="checkout-date">Uit-Check Datum</label>
+                  <input class="input-reservering" type="date" id="checkout-date" name="checkout" required>
+                </div>
+                <div class="elem-group">
+                  <label class="label-reservering" for="bike-selection">Selecteer Uw Reservering</label>
+                  <select id="bike-selection" name="bike_preference" required>
+                      <option value="">---Kies Een Fiets Reservering Van Hieronder---</option>
+                      <option value="connecting">4 uur - €15 p.p (8:00 t/m 18:00)</option>
+                      <option value="adjoining">2,5 uur Fiets Tour €25 p.p (max 10 pers. 10:00 of 15:00) </option>
+                  </select>
+                </div>
+                
+                <div class="elem-group">
+                  <label class="label-reservering" for="message">Heeft U Opmerkingen?</label>
+                  <textarea id="message" name="visitor_message" placeholder="Vertel hier iets belangrijks voor ons..."></textarea>
+                </div>
+                <button class="button-reservering"><a class="kutanchor" href="thankyou.html" >Boek Uw Reservering!</a></button>
+              </form>
         </div>
         
     </body>
