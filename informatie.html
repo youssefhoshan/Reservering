@@ -1,136 +1,153 @@
-
 <html>
-    <head>
-        <title>The Real Version?</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="test.js"></script>
-    </head>
-    <body>
-        <div class="banner">
-            <div class="navbar">
-                <a href="homepage.html"><img src="./images/logo.png" class="logo"></a>
-                <ul>
-                    <li><a href="homepage.html">Home</a></li>
-                    <li><a href="reservering.html">Reserveer Nu</a></li>
-                    <li><a href="informatie.html">Informatie</a></li>
-                    <li><a href="prijzen.html">Prijzen</a></li>
-                    <li><a href="loginpage.html">Login</a></li>
-                </ul>
+
+<head>
+    <title>The Real Version?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="test.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="homepage.html"><img src="./images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="reservering.html">Reserveer Nu</a></li>
+                <li><a href="informatie.html">Informatie</a></li>
+                <li><a href="prijzen.html">Prijzen</a></li>
+                <li><a href="loginpage.html">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="head-par-info1">
+            <br>
+            <br>
+            <h1 class="header-titel1">Informatie fietstour</h1>
+            <p class="par-titel">Onze fiets tour duurt 2,5 uur lang en word 2x per dag gehouden om 10.00 en om 15.00. Er
+                kunnen maximaal 10 mensen mee. <br> (fietsen voor deze tour staan apart en zitten niet in de fiets
+                verhuur) kosten voor deze tour bedragen 10 euro per persoon incl fiets.</p>
+            <br>
+            <ol class="list-info">
+                <li>No.1 Barcelona Fietstour</li>
+                <li>Nederlandse gidsen</li>
+                <li>Getipt door ANWB</li>
+                <li>Centraal startpunt</li>
+            </ol>
+            <br>
+            <br>
+            <h1 class="header-titel1">Wat kan je verwachten?</h1>
+            <br>
+            <p class="par-titel">Bij de fietstour zullen wij zeker langs de hoogtepunten als <b>Sagrada Familia,
+                    Ramblas, Gothische Wijk & Barceloneta</b> fietsen!</p>
+            <br>
+            <p class="par-titel">Deze ontspannen Barcelona fietstour met Nederlandse, lokale gids combineert in slechts
+                2,5 uur de belangrijkste must-see highlights (o.a. enkele meesterwerken van Gaudi) met de verborgen
+                schatten van deze prachtige wereldstad. De Nederlandstalige local vertelt de complete historie en
+                achtergronden, zodat je in korte tijd alles over deze topstad te weten komt! Deze Barcelona Fietstour is
+                dankzij de uitstekende infrastructuur (o.a. honderden kilometers fietspad) naast leuk, informatief en
+                ontspannen ook 100% veilig.</p>
+            <br>
+            <br>
+        </div>
+        <div class="head-par-info2">
+            <br>
+            <h1 class="header-titel">Zoom in op de niet te missen hoogtepunten</h1>
+            <br>
+            <p class="par-titel">Klik op de pijl hieronder voor foto's </p>
+            <br>
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./images/pic1.jpg" style="width:100%">
+                    <div class="text">Sagrada Familia</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./images/pic2.jpg" style="width:100%">
+                    <div class="text">Gothische Wijk</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./images/pic3.jpg" style="width:100%">
+                    <div class="text">Barceloneta</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
-            <div class="head-par-info1">
-                <h1 class="header-titel">Informatie fietstour</h1>
-                <p class="par-titel">Onze fiets tour duurt 2,5 uur lang en word 2x per dag gehouden om 10.00 en om 15.00. Er kunnen maximaal 10 mensen mee. <br> (fietsen voor deze tour staan apart en zitten niet in de fiets verhuur) kosten voor deze tour bedragen 10 euro per persoon incl fiets.</p>
-                <br>
-                <ol class="list-info">
-                    <li>No.1 Barcelona Fietstour</li>
-                    <li>Nederlandse gidsen</li>
-                    <li>Getipt door ANWB</li>
-                    <li>Centraal startpunt</li>
-                </ol>
-                <br>
-                <br>
-                <h1 class="header-titel">Wat kan je verwachten?</h1>
-                <br>
-                <p class="par-titel">Bij de fietstour zullen wij zeker langs de hoogtepunten als <b>Sagrada Familia, Ramblas, Gothische Wijk & Barceloneta</b> fietsen!</p>
-                <br>
-                <p class="par-titel">Deze ontspannen Barcelona fietstour met Nederlandse, lokale gids combineert in slechts 2,5 uur de belangrijkste must-see highlights (o.a. enkele meesterwerken van Gaudi) met de verborgen schatten van deze prachtige wereldstad. De Nederlandstalige local vertelt de complete historie en achtergronden, zodat je in korte tijd alles over deze topstad te weten komt! Deze Barcelona Fietstour is dankzij de uitstekende infrastructuur (o.a. honderden kilometers fietspad) naast leuk, informatief en ontspannen ook 100% veilig.</p>
-                <br>
-                <br>
-                <h1 class="header-titel">Zoom in op de niet te missen hoogtepunten</h1>
-                <br>
-                <p class="par-titel">Klik op de pijl hieronder voor foto's </p>
-                <br>
 
-                <!-- Slideshow container -->
-<div class="slideshow-container">
+            <br>
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="./images/pic1.jpg" style="width:100%">
-      <div class="text">Sagrada Familia</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="./images/pic2.jpg" style="width:100%">
-      <div class="text">Gothische Wijk</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="./images/pic3.jpg" style="width:100%">
-      <div class="text">Barceloneta</div>
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-                
+            <h1 class="header-titel">Route</h1>
+            <img src="./images/maps.PNG" alt="">
+            <br>
 
-                <br>
+            <p class="par-titel">In een klein groepje begeleidt de tourguide je door de stad. Deze expert heeft als
+                inwoner ook veel inside tips, waar je bijvoorbeeld het beste kan eten, relaxen of lokale wijn drinken.
+                Zo bespaart deze populaire Barcelona fietstour je tijd en zorgt ervoor dat je het maximale haalt uit je
+                stedenbezoek. Uiteraard is er op elke plek genoeg tijd om foto´s te maken!
+                Boek deze topexcursie nu online en betaal op locatie!
+                Enthousiast geraakt over deze excursie? De Barcelona fietstour is geheel zonder reserveringskosten,
+                veilig en snel online te boeken.
+                Dus waar wacht je nog op? Reserveer een plekje voor deze geweldige rondleiding door de Catalaanse
+                hoofdstad!
+            </p>
+            <br>
+            <button class="button-reservering" type="submit"><a class="kutanchor" href="reservering.html">Boek Uw
+                    Reservering!</a></button>
+            <br>
+            <h1 class="header-titel">Hier bij Verrasend Barcelona denken wij graag met je mee.</h1><br>
+            <p class="par-titel">
+                Wij hebben een rij aan specialisten waar u blind op kunt vertrouwen en u zo snel mogelijk kunnen helpen!
+            </p>
+            <p class="par-titel-2"> Komt u er toch niet uit? Laat hieronder uw informatie achter en wij nemen binnen 24
+                uur contact met u op! </p>
+        </div>
 
-                <h1 class="header-titel">Route</h1>
-                <img src="./images/maps.PNG" alt="">
-                <br>
 
-                <p class="par-titel">In een klein groepje begeleidt de tourguide je door de stad. Deze expert heeft als inwoner ook veel inside tips, waar je bijvoorbeeld het beste kan eten, relaxen of lokale wijn drinken. Zo bespaart deze populaire Barcelona fietstour je tijd en zorgt ervoor dat je het maximale haalt uit je stedenbezoek. Uiteraard is er op elke plek genoeg tijd om foto´s te maken!
-                    Boek deze topexcursie nu online en betaal op locatie!
-                    Enthousiast geraakt over deze excursie? De Barcelona fietstour is geheel zonder reserveringskosten, veilig en snel online te boeken. 
-                    Dus waar wacht je nog op? Reserveer een plekje voor deze geweldige rondleiding door de Catalaanse hoofdstad!
-                    </p>
-                    <br>
-                    <button class="button-reservering" type="submit"><a class="kutanchor" href="reservering.html">Boek Uw Reservering!</a></button>
-                <br>
-                <h1 class="header-titel">Hier bij Verrasend Barcelona denken wij graag met je mee.</h1><br>
-                <p class="par-titel">
-                    Wij hebben een rij aan specialisten waar u blind op kunt vertrouwen en u zo snel mogelijk kunnen helpen! 
-                </p>
-                <p class="par-titel-2"> Komt u er toch niet uit? Laat hieronder uw informatie achter en wij nemen binnen 24 uur contact met u op! </p>
-            </div>
-            
-        
-            <div class="container">
-                <form>
-              
-                  <label for="fname">Voornaam</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Jouw voornaam..">
-              
-                  <label for="lname">Achternaam</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Jouw achternaam..">
-              
-                  <label for="country">Land</label>
-                  <select id="country" name="country">
+        <div class="container">
+            <form>
+
+                <label for="fname">Voornaam</label>
+                <input type="text" id="fname" name="firstname" placeholder="Jouw voornaam..">
+
+                <label for="lname">Achternaam</label>
+                <input type="text" id="lname" name="lastname" placeholder="Jouw achternaam..">
+
+                <label for="country">Land</label>
+                <select id="country" name="country">
                     <option value="Nederland">Nederland</option>
                     <option value="Belgie">België</option>
                     <option value="Duitsland">Spanje</option>
-                  </select>
-              
-                  <label for="onderwerp">Onderwerp</label>
-                  <textarea id="onderwerp" name="onderwerp" placeholder="Jouw onderwerp.." style="height:200px"></textarea>
-              
-                  <input type="submit" value="Stuur op">
-              
-                </form>
-              </div>
+                </select>
+
+                <label for="onderwerp">Onderwerp</label>
+                <textarea id="onderwerp" name="onderwerp" placeholder="Jouw onderwerp.."
+                    style="height:200px"></textarea>
+
+                <input type="submit" value="Stuur op">
+
+            </form>
         </div>
-        
-        
+        <br>
+    </div>
 
+</body>
 
-
-
-        </div>
-        
-    </body>
 </html>
