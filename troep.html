@@ -1,0 +1,71 @@
+
+<html>
+    <head>
+        <title>The Real Version?</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <a href="homepage.html"><img src="./images/logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="reservering.html">Reserveer Nu</a></li>
+                    <li><a href="informatie.html">Informatie</a></li>
+                    <li><a href="prijzen.html">Prijzen</a></li>
+                    <li><a href="loginpage.html">Login</a></li>
+                </ul>
+            </div>
+            
+            <img class="fietsimg" src="./images/fiets.jpg" alt="">
+            <br>
+
+            <form action="connect.php" method="post">
+                <div class="elem-group">
+                  <label class="label-reservering" for="name">Jouw naam</label>
+                  <input class="input-reservering" type="text" id="name" name="VisitorName" placeholder="Jan Pieter" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                  <label class="label-reservering" for="email">Jouw E-mail</label>
+                  <input class="input-reservering" type="email" id="email" name="VisitorEmail" placeholder="Jan.Pieter@email.com" required>
+                </div>
+                <div class="elem-group">
+                  <label class="label-reservering" for="phone">Jouw Telefoonnummer</label>
+                  <input class="input-reservering" type="tel" id="phone" name="VisitorPhone" placeholder="(+31) 12345678" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                
+                <div class="elem-group inlined">
+                  <label class="label-reservering" for="adult">Volwassenen</label>
+                  <input class="input-reservering" type="number" id="adult" name="TotalAdults" placeholder="0" min="1" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label class="label-reservering" for="child">Kinderen</label>
+                  <input class="input-reservering" type="number" id="child" name="Total_Children" placeholder="0" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label class="label-reservering" for="checkin-date">Check-in Datum</label>
+                  <input class="input-reservering" type="date" id="checkin-date" name="Checkin" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label class="label-reservering" for="checkout-date">Uit-Check Datum</label>
+                  <input class="input-reservering" type="date" id="checkout-date" name="checkout" required>
+                </div>
+                <div class="elem-group">
+                  <label class="label-reservering" for="bike-selection">Selecteer Uw Reservering</label>
+                  <select id="bike-selection" name="bike_preference" required>
+                      <option value="">---Kies Een Fiets Reservering Van Hieronder---</option>
+                      <option value="1">4 uur - €15 p.p (8:00 t/m 18:00)</option>
+                      <option value="2">2,5 uur Fiets Tour €25 p.p (max 10 pers. 10:00 of 15:00) </option>
+                </div>
+                
+                <div class="elem-group">
+                  <label class="label-reservering" for="message">Heeft U Opmerkingen?</label>
+                  <textarea id="message" name="message" placeholder="Vertel hier iets belangrijks voor ons..."></textarea>
+                </div>
+                
+                <button class="button-reservering">Boek Uw Reservering!</button>
+              </form>
+        </div>
+        
+    </body>
+</html>
