@@ -5,10 +5,11 @@ $email = $_POST["email"];
 $telefoonnummer = $_POST["telefoonnummer"];
 $volwassenen = filter_input(INPUT_POST, "volwassenen", FILTER_VALIDATE_INT);
 $kinderen= filter_input(INPUT_POST, "kinderen", FILTER_VALIDATE_INT);
-$checkin= $_POST["checkin"];
-$checkout= $_POST["checkout"];
+$checkin= date('Y-m-d', strtotime($_POST["checkin"]));
+$checkout= date('Y-m-d', strtotime($_POST["checkout"]));
 $fietsreservering= $_POST["fietsreservering"];
 $terms = filter_input(INPUT_POST, "terms", FILTER_VALIDATE_BOOL);
+
 
 if ( ! $terms){
     die("JIJ KUT mongool check die tering Terms and Conditions ding");
@@ -40,7 +41,7 @@ if ( ! mysqli_stmt_prepare($stmt, $sql)){
     die(mysqli_error($conn));
 }
 
-mysqli_stmt_bind_param($stmt, "ssiiiiii",
+mysqli_stmt_bind_param($stmt, "ssiiissi",
                         $naam,
                         $email,
                         $telefoonnummer,

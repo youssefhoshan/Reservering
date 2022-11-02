@@ -12,7 +12,7 @@ body {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(73, 53, 53, 0.75), rgba(0, 0, 0, 0.75)),
-      url(./images/Main-Background.jpg);
+    url(./images/Main-Background.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -359,19 +359,19 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 650px) {
   .col {
-      width: 100%;
-      margin-top: 0;
+    width: 100%;
+    margin-top: 0;
   }
 
-  
+
   .vl {
-      display: none;
+    display: none;
   }
 
-  
+
   .hide-md-lg {
-      display: block;
-      text-align: center;
+    display: block;
+    text-align: center;
   }
 }
 
@@ -395,7 +395,9 @@ div.elem-group.inlined {
   font-size: 1.25em;
 }
 
-.input-reservering, select, textarea {
+.input-reservering,
+select,
+textarea {
   border-radius: 2px;
   border: 2px solid #777;
   box-sizing: border-box;
@@ -431,7 +433,7 @@ button.button-reservering:hover {
   transition: 0.5s;
 }
 
-.list-info{
+.list-info {
   font-size: 20px;
   text-align: center;
 }
@@ -452,7 +454,8 @@ button.button-reservering:hover {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   width: auto;
@@ -473,8 +476,9 @@ button.button-reservering:hover {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -509,7 +513,8 @@ button.button-reservering:hover {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -520,19 +525,24 @@ button.button-reservering:hover {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
-.kutanchor{
+.kutanchor {
   color: white;
   font-weight: bold;
   text-decoration: none;
   font-size: 20px;
 }
 
-.fietsimg{
-  margin-left:365px;
+.fietsimg {
+  margin-left: 365px;
   margin-bottom: 20px;
   margin-top: -35px;
   border-radius: 12px;
@@ -540,19 +550,20 @@ button.button-reservering:hover {
 
 /*nog een test */
 
-.header-titel-thanks{
+.header-titel-thanks {
   color: white;
   font-size: 40px;
   padding-bottom: 40px;
   text-align: center;
 }
-.p-thanks{
+
+.p-thanks {
   font-size: 20px;
   text-align: center;
   color: white;
 }
 
-.buybuttonthanks{
+.buybuttonthanks {
   width: 200px;
   padding: 15px 0;
   text-align: center;
@@ -568,7 +579,91 @@ button.button-reservering:hover {
   overflow: hidden;
 }
 
-.buybuttonthanks:hover{
+.buybuttonthanks:hover {
   background-color: #75257a;
   transition: 0.5s;
 }
+
+
+/* test*/
+
+.wrapper{
+  width: 853px;
+  margin: 0% 15%;
+}
+
+.single-price{
+  background: #262626;
+  float: left;
+  margin-left: 100px;
+  box-shadow: 1px 1px 20px rgba(0,0,0,0.5);
+  text-align: center;
+  transition: 0.9s;
+  border-radius: 10px;
+}
+
+.price{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border:2px solid #a833b0;
+  margin: 5% auto 0 auto;
+  text-align: center;
+}
+
+.deals{
+  margin-top: 10px;
+}
+
+.single-price h1{
+  font-size: 18px;
+  color: #fff;
+  line-height: 3;
+  text-transform: uppercase;
+}
+
+.price h2{
+  font-size: 38px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.deals h4{
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.single-price:hover{
+  background: #a833b0;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,1) ;
+  transform-style: scale(1.1);
+  z-index: 1;
+  border-radius: 25px;
+}
+
+.single-price:hover .price{
+  border-color: #fff;
+}
+
+.single-price a{
+  text-decoration: none;
+  background: #a833b0;
+  color: #fff;
+  padding: 10px 60px ;
+  display: inline-block;
+  margin: 10% auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.single-price:hover a{
+  background: #262626;
+  color: #fff;
+
+}
+
+
